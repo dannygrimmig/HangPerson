@@ -83,7 +83,7 @@ def update_key(guess, secret, key): #updates the keycard (the guess)
         if old[j] in "QWERTYUIOPLKJHGFDSAZXCVBNM":
             final += old[j]
         else:
-            final += new[j]   #I realize now after updating the remaining letters there is a more efficient way to fix this, but since deadline is soon i will leave as is
+            final += new[j]  
 
     return final
 
@@ -153,9 +153,6 @@ def main():
     words = ['SPRING', 'LEAVES', 'MUD', 'SUNNY', 'DAFFODIL', 'HAPPY', 'SUNSHINE', 'WINTER']
     secret = random.choice(words)
     play(secret)
-   # You might want to print out the secret word before the game begins.
-   # That way, you'll be able to test when your program is behaving correctly
-   # with each guessed letter (e.g., revealing letters that should be revealed).
 
 
 if __name__ == '__main__':
